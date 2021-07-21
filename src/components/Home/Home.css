@@ -1,10 +1,24 @@
+:root{
+    --var-white: #ffffff
+}
+
 .containerHome{
-        width: 100%;
-        height: 100vh;
-        background-image: url(../../assets/indexBlack.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;        
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.imgFundo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: tomato;
+    z-index: -3;
+}
+
+.imgFundo > img{
+   width: 100%;
+   height: 100%;
 }
 
 .contentHome{
@@ -12,18 +26,59 @@
     align-items: flex-end;
     justify-content: flex-end;
     flex-direction: column;
-    
     width: 100%;
     height: 100%;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 
 }
 
 .textAlignHome{
-    width: 40%;
-    background-color: blue;
+    width: 50%;
+    margin-right: 10rem;
+    margin-bottom: 2rem;
+    /* background-color: blue; */
+    z-index: 2;
+}
+
+.textAlignHome > p{
+    font-size: 2rem;
+    color: var(--var-white);
+    text-align: right;
 }
 
 .buttonHome{
-    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-right: 10rem;
+    margin-bottom: 10rem;
+    /* background-color: blueviolet; */
+    cursor: pointer;
+    z-index: 100;
+}
+
+.buttonHome button{
+    font-size: 4.5rem;
+    font-size: 900;
+    background: transparent;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    border:none;
+    outline: none;
+    color: var(--var-white);
+    cursor: pointer;
+
+  
+    z-index: 2;
+}
+
+
+.contentHome >img{
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   z-index: -1;
+   height: 100%;
+   width: 100%;
+
 }
