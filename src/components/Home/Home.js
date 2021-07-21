@@ -2,11 +2,13 @@ import React from 'react';
 import './Home.css'
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import { makeStyles } from '@material-ui/core';
+import imgFundo from '../../assets/indexBlack.jpg'
+import wave from '../../assets/homeWave.png'
 
 
 let useStyles = makeStyles({
     arrow: {
-        width: 100,
+        fontSize: 50,
         color: "#FFFFFF",
     }
 })
@@ -17,6 +19,12 @@ export default function Home(props) {
 
     return (
         <div className="containerHome">
+
+            <div className="imgFundo">
+                <img src={imgFundo} alt="imagem de fundo" />
+            </div>
+
+
             <div className="contentHome">
                 <div className="textAlignHome">
                     <p >Este projeto apresenta os dias e horários em uma barbearia,
@@ -26,9 +34,11 @@ export default function Home(props) {
                 </div>
 
                 <div className="buttonHome">
-                    <button>Acesse</button>
+                    <button>Acesso do cliente</button>
                     <ArrowForwardIosIcon className={classes.arrow} />
                 </div>
+
+                <img src={wave} alt="teste" />
 
             </div>
         </div>
