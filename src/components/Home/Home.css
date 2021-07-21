@@ -1,0 +1,29 @@
+.containerHome{
+        width: 100%;
+        height: 100vh;
+        background-image: url(../../assets/indexBlack.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;        
+}
+
+.contentHome{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
+    
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+
+}
+
+.textAlignHome{
+    width: 40%;
+    background-color: blue;
+}
+
+.buttonHome{
+    background-color: blueviolet;
+}
